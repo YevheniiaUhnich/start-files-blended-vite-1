@@ -1,6 +1,6 @@
 import BlogCard from './components/BlogCard/BlogCard';
 // import Container from './components/Container/Container';
-// import CryptoHistory from './components/CryptoHistory/CryptoHistory';
+import CryptoHistory from './components/CryptoHistory/CryptoHistory';
 import ForbesList from './components/ForbesList/ForbesList';
 // import Heading from './components/Heading/Heading';
 // import Section from './components/Section/Section';
@@ -8,6 +8,7 @@ import Statistics from './components/Statistics/Statistics';
 import article from './data/article.json';
 import stats from './data/stats.json';
 import forbes from './data/forbes.json';
+import transactions from './data/transactions.json';
 import './App.css';
 
 export const App = () => {
@@ -28,6 +29,7 @@ export const App = () => {
       <p className="task">Task-3</p>
       <ForbesList list={forbes} />
       <p className="task">Task-4</p>
+      <CryptoHistory items={transactions} />
     </>
   );
 };
