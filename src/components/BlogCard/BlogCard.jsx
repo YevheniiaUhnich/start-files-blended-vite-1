@@ -1,4 +1,5 @@
 import styles from './BlogCard.module.css';
+import { format } from 'date-fns';
 
 const BlogCard = ({
   name,
@@ -9,6 +10,7 @@ const BlogCard = ({
   description,
   avatar,
 }) => {
+  const formattedDate = format(new Date(postedAt), 'dd.MM.yyyy');
   return (
     <div className={styles.card}>
       <div className={styles.cardHeader}>
@@ -24,7 +26,7 @@ const BlogCard = ({
           <img className={styles.avatar} src={avatar} alt="name" />
           <div>
             <h3 className={styles.userName}>{name}</h3>
-            <small className={styles.date}>{postedAt}</small>
+            <small className={styles.date}>{formattedDate}</small>
           </div>
         </div>
       </div>

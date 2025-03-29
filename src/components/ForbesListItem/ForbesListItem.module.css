@@ -1,5 +1,11 @@
+.listItem {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
 .avatar {
-  width: 60px;
+  width: 80px;
   border-radius: 50%;
   box-shadow: var(--shadow-regular);
 }
@@ -7,9 +13,10 @@
 .title {
   color: var(--color-gray);
   font-weight: 600;
-  font-size: var(--font-large);
+  font-size: 34px;
   letter-spacing: 1px;
   margin-left: 8px;
+  white-space: nowrap;
 }
 
 .capital {
@@ -18,5 +25,9 @@
   gap: 4px;
   color: var(--color-accent);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 34px;
 }
+
+/* .icons {
+  color: black;
+} */
